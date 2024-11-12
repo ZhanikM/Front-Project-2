@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Movies App</h1>
+        <div id="search-container">
+            <input type="text" id="search-input" placeholder="Search for a movie...">
+            
+        </div>
+        <div class="suggestions"></div> 
+    </header>
+
+    <div id="movies-container" class="movies-container">
+    </div>
+
+    <div id="movie-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title">Movie Title</h2>
+            <p id="modal-synopsis">Movie Synopsis</p>
+            <p id="modal-rating">Rating: </p>
+            <p id="modal-runtime">Runtime: </p>
+            <p id="modal-release">Release Date: </p>
+            <h3>Cast:</h3>
+            <ul id="modal-cast"></ul>
+        
+            <h3>Crew:</h3>
+            <ul id="modal-crew"></ul>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
