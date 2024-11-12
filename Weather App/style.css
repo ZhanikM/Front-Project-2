@@ -1,0 +1,257 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    color: white;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+
+
+body{
+    background: linear-gradient(135deg, rgb(128, 80, 206), rgb(67, 208, 191));
+    height: 1300px;
+}
+.header{
+    max-width: 1920px;
+    width: 80%;
+    height: 150px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.search{
+    margin-top: 40px;
+}
+.suggestions {
+    position: absolute;
+    background: #46317c;
+    width: 11%;
+    max-height: 150px;
+    z-index: 1000;
+    overflow-y: hidden;
+    border-radius: 15px;
+}
+
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestion-item:hover {
+    background-color: #000000;
+}
+.search input{
+    border-radius: 30px;
+    width: 400px;
+    height: 40px;
+    border: 0px;
+    font-size: 30px;
+    padding-left: 21px;
+}
+.geolocation{
+    margin-right: 10px;
+}
+.switch{
+    margin-right: 10px;
+}
+.button{
+    margin-left: 10px;
+
+}
+.circle-button {
+    background-color: #ffffff; /* Цвет фона кнопки */
+    border-radius: 50%; /* Делает кнопку круглой */
+    transition: background-color 0.3s; 
+    width: 40px;
+    height: 40px;
+    position: relative;
+    border: 0px;
+    margin-top: 40px;
+}
+.circle-button img{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 24%;
+    bottom: 27%;
+}
+.circle-button:hover {
+    background-color: #0056b3;
+}
+.main{
+    max-width: 1920px;
+    width: 80%;
+    height: 450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    }
+.weather img{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+.weather{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+.conditions{
+    font-size: 40px;
+    font-family: 'Roboto';
+    margin: auto;
+}
+.temperature{
+    font-size: 100px;
+    margin: auto;
+    font-weight: bold;
+    font-family: 'Roboto';
+}
+.location{
+    font-size: 40px;
+    font-family: 'Roboto';
+    margin: auto;
+}
+.parametrs{
+    max-width: 1920px;
+    width: 60%;
+    height: 200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.humidity{
+    width: 250px;
+    height: 200px;
+    position: relative;
+}
+.humidity .icon img{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+}
+.humidity .indicator{
+    font-size: 40px;
+    position: absolute;
+    left: 55%;
+    bottom: 40%;
+}
+.humidity .nomination{
+    font-size: 40px;
+    position: absolute;
+    left: 55%;
+    bottom: 20%;
+}
+.wind{
+    width: 250px;
+    height: 200px;
+    position: relative;
+}
+.wind .icon img{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: -60%;
+    bottom: 0%;
+}
+.wind .indicator{
+    font-size: 40px;
+    position: absolute;
+    left: 10%;
+    bottom: 40%;
+}
+.wind .nomination{
+    font-size: 40px;
+    position: absolute;
+    left: 10%;
+    bottom: 20%;
+}
+.weather-forecast{
+    max-width: 1920px;
+    width: 80%;
+    height: 400px;
+    margin: auto;
+    margin-top: 100px;
+}
+.days{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.days .nomination{
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Roboto';
+}
+.days img{
+    width: 80px;
+    height: 80px;
+}
+.days .icon{
+    text-align: center;
+    margin-top: 20px;
+}
+.weather-forecast .indicator{
+    display: flex;
+    font-size: 35px;
+    justify-content: space-between;
+    width: 140px;
+    height: 40px;
+    margin-top: 30px;
+}
+.weather-forecast .indicator{
+    margin-left: 50px;
+}
+.indicator .min{
+    color: #0d3863;
+    margin-left: 25px;
+}
+.days .conditions{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 30px;
+}

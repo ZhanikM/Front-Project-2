@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather APP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Lekton:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="geolocation">
+            <button class="circle-button" id="geo-input">
+                <img src="source/geolocation.png" alt="">
+            </button>
+        </div>
+        <div class="switch" id="switch-measure">
+            <button class="circle-button">
+                <img src="source/switch.png" alt="">
+            </button>
+        </div>
+        <div class="search">
+            <input type="text" id="city-input" placeholder="enter city name">
+            <div class="suggestions" style="display: none;"></div> <!-- Контейнер для автоподсказок -->
+        </div>
+        <div class="button">
+            <button class="circle-button">
+                <img src="source/m-glass.png" alt="icon">
+            </button>
+        </div>
+    </header>
+    <section class="main">
+        <div class="weather">
+            <img src="source/snowy.png" alt="">
+        </div>
+        <div class="temperature">
+            22°C
+        </div>
+        <div class="location">
+            New York
+        </div>
+        <div class="conditions">
+            Rain
+        </div>
+    </section>
+    <section class="parametrs">
+        <div class="humidity">
+            <div class="icon">
+                <img src="source/humidity.png" alt="">
+            </div>
+            <div class="indicator">
+                50%
+            </div>
+            <div class="nomination">
+                Humidity
+            </div>
+        </div>
+        <div class="wind">
+            <div class="icon">
+                <img src="source/wind.png" alt="">
+            </div>
+            <div class="indicator">
+                15 km/h
+            </div>
+            <div class="nomination">
+                Wind Speed
+            </div>
+        </div>
+    </section>
+    <section class="weather-forecast">
+        <div class="days">
+            <div class="first">
+                <div class="nomination">
+                    Sat
+                </div>
+                <div class="icon">
+                    <img src="source/sun.png" alt="">
+                </div>
+                <div class="conditions">
+                    Sunny
+                </div>
+                <div class="indicator">
+                    <div class="max">
+                        15°
+                    </div>
+                    <div class="min">
+                        3°
+                    </div>
+                </div>
+            </div>
+            <div class="second">
+                <div class="nomination">
+                    Sun
+                </div>
+                <div class="icon">
+                    <img src="source/sun.png" alt="">
+                </div>
+                <div class="conditions">
+                    Sunny
+                </div>
+                <div class="indicator">
+                    <div class="max">
+                        12°
+                    </div>
+                    <div class="min">
+                        6°
+                    </div>
+                </div>
+            </div>
+            <div class="third">
+                <div class="nomination">
+                    Mon
+                </div>
+                <div class="icon">
+                    <img src="source/cloud.png" alt="">
+                </div>
+                <div class="conditions">
+                    Sunny
+                </div>
+                <div class="indicator">
+                    <div class="max">
+                        21°
+                    </div>
+                    <div class="min">
+                        13°
+                    </div>
+                </div>
+            </div>
+            <div class="fourth">
+                <div class="nomination">
+                    Tue
+                </div>
+                <div class="icon">
+                    <img src="source/snowy.png" alt="">
+                </div>
+                <div class="conditions">
+                    Snow
+                </div>
+                <div class="indicator">
+                    <div class="max">
+                        16°
+                    </div>
+                    <div class="min">
+                        12°
+                    </div>
+                </div>
+            </div>
+            <div class="fifth">
+                <div class="nomination">
+                    Wed
+                </div>
+                <div class="icon">
+                    <img src="source/rain.png" alt="">
+                </div>
+                <div class="conditions">
+                    Rain
+                </div>
+                <div class="indicator">
+                    <div class="max">
+                        11°
+                    </div>
+                    <div class="min">
+                        1°
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
